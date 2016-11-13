@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="hero-slider"></div>
+  <style>
+    .hero-slider {
+      background-image: url(images/1.svg);
+    }
+  </style>
+
+  <script src="../dist/slider.js"></script>
+  <script>
+    const slider = new Slider({
+      node: document.querySelector('.hero-slider'),
+      slides: [{
+        title: 'Slide 1',
+        url: '#1',
+        image: 'images/1.svg'
+      }, {
+        title: 'Slide 2',
+        url: '#2',
+        image: 'images/2.svg'
+      }, {
+        title: 'Slide 3',
+        url: '#3',
+        image: 'images/3.svg'
+      }, {
+        title: 'Slide 4',
+        url: '#4',
+        image: 'images/4.svg'
+      }]
+    })
+  </script>
+</body>
