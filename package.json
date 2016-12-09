@@ -4,7 +4,10 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "example": "webpack-dev-server",
+    "build": "webpack",
+    "build:prod": "NODE_ENV=production webpack",
+    "lint": "eslint ./src"
   },
   "keywords": [],
   "author": "",
@@ -12,10 +15,14 @@
   "devDependencies": {
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-react": "^6.16.0",
-    "webpack": "beta"
+    "babili-webpack-plugin": "^0.0.7",
+    "webpack": "beta",
+    "webpack-dev-server": "beta"
   },
   "dependencies": {
+    "preact": "^6.4.0",
     "react": "^15.4.0-rc.4",
     "react-dom": "^15.4.0-rc.4"
   }

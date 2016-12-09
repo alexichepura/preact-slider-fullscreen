@@ -1,7 +1,7 @@
-import React from 'react'
+import { h, Component } from 'preact'
 import Slide from './Slide'
 
-class Slider extends React.Component {
+class Slider extends Component {
   constructor(props) {
     super(props)
     this.state = {

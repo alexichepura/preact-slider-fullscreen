@@ -1,12 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import { h, render } from 'preact'
 import Slider from './Slider'
 
 class SliderApp {
   constructor(props) {
-    ReactDOM.render(
-      <Slider
-        slides={props.slides}/>, 
+    render(
+      <Slider slides={props.slides}/>,
       props.node
     )
   }

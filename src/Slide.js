@@ -1,6 +1,6 @@
-import React from 'react'
+import { h, Component } from 'preact'
 
-class Slide extends React.Component {
+class Slide extends Component {
   render() {
     const {title, url, image} = this.props.slide
     return <div
